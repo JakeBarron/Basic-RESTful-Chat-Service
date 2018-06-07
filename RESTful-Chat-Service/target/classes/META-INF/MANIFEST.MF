@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: RESTful-Chat-Service
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: Jake Barron
+Implementation-Vendor-Id: org.JakeBarron.Cirtual
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/RESTful-Chat
+ -Service/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
