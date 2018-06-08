@@ -2,6 +2,8 @@ package org.JakeBarron.Cirtual.domains;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -9,9 +11,16 @@ import javax.persistence.Table;
 @Table(name = "users")
 public class User {
 	
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Long id;
+	
 	@Id
 	@Column(name = "username")
 	private String username;
+	
+	@Column(name = "password")
+	private String password;
 	
 	//getters
 	public String getUsername() {

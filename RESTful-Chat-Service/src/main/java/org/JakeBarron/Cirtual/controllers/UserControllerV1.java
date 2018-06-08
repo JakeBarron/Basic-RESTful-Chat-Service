@@ -2,7 +2,7 @@ package org.JakeBarron.Cirtual.controllers;
 
 import org.JakeBarron.Cirtual.domains.User;
 import org.JakeBarron.Cirtual.managers.UserManager;
-
+import org.JakeBarron.Cirtual.services.H2Dao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -19,6 +19,9 @@ public class UserControllerV1 {
 	
     @Autowired
     private UserManager userManager;
+    
+    @Autowired
+    private H2Dao dao;
     
     
     @RequestMapping(method = RequestMethod.GET)
